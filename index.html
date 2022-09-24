@@ -27,8 +27,8 @@
         height: 100%;
       }
       body {
-        padding-top: 110px;
-        height: 100%;
+        /* padding-top: 110px; */
+        height: 100vh;
       }
       a {
         color: #3e7f91;
@@ -49,6 +49,9 @@
         font-family: "Nova Square", cursive;
       }
       .text_size {
+        font-size: 3vmin;
+      }
+      .para_size {
         font-size: 3vmax;
       }
       .navbar_top {
@@ -59,10 +62,22 @@
         max-height: 8vh;
       }
       .full-height {
-        height: 100%;
+        height: 100vh;
+      }
+      .full-width {
+        width: 100%;
       }
       .icon1 {
-        font-size: 10vmax;
+        font-size: 5vmax;
+      }
+      .pp {
+        width: 50vmin;
+      }
+      .intro {
+        font-size: 5vmax;
+      }
+      .mt10 {
+        margin-top: 80px;
       }
       @media only screen and (min-width: 992px) {
         #desc {
@@ -71,6 +86,12 @@
         .icon1 {
           font-size: 8vmin;
         }
+        .intro {
+          font-size: 8vmin;
+        }
+        .para_size {
+          font-size: 2vmax;
+        }
       }
     </style>
   </head>
@@ -78,7 +99,7 @@
     <nav
       class="navbar navbar-light fixed-top navbar-expand-lg navbar_top primary-bg"
     >
-      <div class="container-fluid m-1 justify-content-center">
+      <div class="container-fluid justify-content-center">
         <button
           class="navbar-toggler border secondary-bg"
           type="button"
@@ -95,22 +116,21 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a
-              class="nav-link font text_size text-center"
-              aria-current="page"
-              href="#"
-              >Me</a
-            >
-            <a class="nav-link font text_size text-center" href="#"
+            <a class="nav-link font text_size text-center" href="#">Me</a>
+            <a class="nav-link font text_size text-center" href="#education"
               >Education</a
             >
-            <a class="nav-link font text_size text-center" href="#"
+            <a
+              class="nav-link font text_size text-center"
+              href="#work_experience"
               >Work Experiences</a
             >
-            <a class="nav-link font text_size text-center" href="#"
+            <a
+              class="nav-link font text_size text-center"
+              href="#personal_project"
               >Personal Project</a
             >
-            <a class="nav-link font text_size text-center" href="#"
+            <a class="nav-link font text_size text-center" href="#cca"
               >Co-Curricular Activities</a
             >
           </div>
@@ -119,44 +139,228 @@
     </nav>
   </header>
   <body>
-    <div class="container full-height">
-      <div class="row full-height">
-        <div
-          class="col-lg-4 d-flex text-center justify-content-center align-items-center"
-        >
-          <img src="pp.jpg" class="img-fluid rounded-circle" />
-        </div>
-        <div
-          id="desc"
-          class="col-lg-6 d-flex justify-content-center full-height"
-        >
-          <div class="container">
-            <div class="row">
-              <h1 class="font text-center my-5">
-                Hi! My name is Daniel Melvin
-              </h1>
-            </div>
-            <div class="row text-center">
-              <div class="col">
-                <a
-                  class="bi bi-linkedin icon1"
-                  href="https://www.linkedin.com/in/daniel-melvin-b2a6491ba/"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="col">
-                <a
-                  class="bi bi-github icon1"
-                  href="https://github.com/Melvinwan"
-                  target="_blank"
-                ></a>
+    <div class="d-flex flex-column">
+      <div
+        class="container full-height d-flex text-center justify-content-center align-items-center"
+      >
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="pp.jpg" class="img-fluid rounded-circle pp" />
+          </div>
+          <div id="desc" class="col-lg-6 d-flex justify-content-center">
+            <div class="flex-column">
+              <p class="font text-center intro">Hi! I'm Daniel Melvin</p>
+              <div class="row text-center">
+                <div class="col">
+                  <a
+                    class="bi bi-linkedin icon1"
+                    href="https://www.linkedin.com/in/daniel-melvin-b2a6491ba/"
+                    target="_blank"
+                  ></a>
+                </div>
+                <div class="col">
+                  <a
+                    class="bi bi-github icon1"
+                    href="https://github.com/Melvinwan"
+                    target="_blank"
+                  ></a>
+                </div>
+                <div class="col">
+                  <a
+                    class="bi bi-envelope icon1"
+                    href="mailto: danielmelvin02@gmail.com"
+                    target="_blank"
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div id="education" class="container min-vh-100">
+        <div class="d-flex flex-column mt10">
+          <div class="text-center">
+            <h1>Education</h1>
+          </div>
+          <div class="border border-5 rounded-3 full-width my-3">
+            <div class="m-3">
+              <p class="para_size fw-bold">
+                Nanyang Technological University - Singapore
+              </p>
+              <p class="para_size fw-bold">
+                Bachelor of Engineering (Material Science of Engineering)
+              </p>
+              <p class="para_size">August 2020 - December 2023 (Expected)</p>
+              <ul>
+                <li class="para_size">Expected Honours</li>
+                <li class="para_size">
+                  Pursuing Specialization in Materials and AI Specialisation
+                </li>
+                <li class="para_size">
+                  Minor in Entrepreneurship (MiE) December Class by Nanyang
+                  Technopreneurship Center: Developed entrepreneurship mindset
+                  and learnt financial and business tools to solve business
+                  cases
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="border border-5 rounded-3 full-width my-3">
+            <div class="m-3">
+              <p class="para_size fw-bold">
+                Undergraduate Research Experience on Campus (URECA)
+              </p>
+              <p class="para_size fw-bold">
+                Schrodinger-Cat States in Landau-Zener-Stueckelberg-Majorana
+                Interferometry
+              </p>
 
+              <p class="para_size">August 2021 - July 2022</p>
+              <ul>
+                <li class="para_size">
+                  Investigated the Landau-Zener transitions in a qubit coupled
+                  to a photon and phonon mode at zero temperature via the
+                  time-dependent variational principle by changing the initial
+                  different parameters and got some useful results for own
+                  publication materials and got the recommendation for
+                  continuing the research in IHPC at A*star
+                </li>
+                <li class="para_size">
+                  Obtained and analyzed the calculation results using MATLAB
+                  programming language via Secure Shell and identified
+                  unexpected outcomes of hybrid Circuit Quantum Electrodynamics
+                  coupled to the environment.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="work_experience" class="container full-width min-vh-100">
+        <div class="d-flex flex-column mt10">
+          <div class="text-center">
+            <h1>Work Experience</h1>
+          </div>
+          <div class="border border-5 rounded-3 full-width my-3">
+            <div class="m-3">
+              <p class="para_size fw-bold">
+                Research Intern at Institute of High Performance Computing
+              </p>
+              <p class="para_size fw-bold">
+                Rabi Dimer Solver for Quantum Gates
+              </p>
+              <p class="para_size">July 2022 - December 2022</p>
+              <ul>
+                <li class="para_size">
+                  Developed a new Quantum Circuit solver by using Rabi Dimer
+                  model with Multi D2 Ansatz and time-dependent variational
+                  parameter method and successfully implemented it as a Python
+                  library
+                </li>
+                <li class="para_size">
+                  Utilized Quantum tools in Python (QuTiP) library to generate
+                  the pulse sequence and Numba library with multiprocessing to
+                  optimized the runtime code
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="personal_project" class="container full-width min-vh-100">
+        <div class="d-flex flex-column mt10">
+          <div class="text-center">
+            <h1>Personal Projects</h1>
+          </div>
+          <div class="border border-5 rounded-3 full-width my-3">
+            <div class="m-3">
+              <a
+                class="para_size fw-bold"
+                href="https://play.google.com/store/apps/details?id=com.SiFinance"
+                target="_blank"
+              >
+                SiFinance - Financing Mobile Application
+              </a>
+              <p class="para_size">May 2021 - August 2021</p>
+              <ul>
+                <li class="para_size">
+                  Developed a personal finance mobile app by using React, React
+                  Native, Javascript and expo within a summer break (3 Months)
+                </li>
+
+                <li class="para_size">
+                  Deployed the application in the Google Play and gained 70+
+                  users in 3 days
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="cca" class="container full-width min-vh-100">
+        <div class="d-flex flex-column mt10">
+          <div class="text-center">
+            <h1>Co-curricular Activities</h1>
+          </div>
+          <div class="border border-5 rounded-3 full-width my-3">
+            <div class="m-3">
+              <p class="para_size fw-bold">
+                Material Science and Engineering Club - Financial Controller at
+                MSE Club (Tops 4)
+              </p>
+              <p class="para_size">September 2022 - present</p>
+              <ul>
+                <li class="para_size">
+                  Managed school flub funding and expenses through the whole two
+                  semesters for various upcoming club events
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="border border-5 rounded-3 full-width my-3">
+            <div class="m-3">
+              <p class="para_size fw-bold">
+                Material Science and Engineering Club - Business Management Sub
+                Committee
+              </p>
+              <p class="para_size">September 2021 - present</p>
+              <ul>
+                <li class="para_size">
+                  Led a Business Management team of 10 group members by
+                  organizing all sponsorship findings and secured 11 sponsors
+                  for NTU MSE Club 22nd committee first event for 400+ students
+                </li>
+                <li class="para_size">
+                  Liaised with external vendors and sponsors by partnering with
+                  NTU MSE Club Welfare and Logistic committee teams to collect
+                  and distribute sponsorship items
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="border border-5 rounded-3 full-width my-3">
+            <div class="m-3">
+              <p class="para_size fw-bold">
+                Material Science and Engineering Club - Business Management Sub
+                Committee
+              </p>
+              <p class="para_size">September 2020 - September 2021</p>
+              <ul>
+                <li class="para_size">
+                  Searched sponsorships for NTU MSE Exam Welfare Packs (EWP) and
+                  Gaming Week Event by emailing and negotiating with companies,
+                  securing a milk sponsorship for NTU MSE EWP
+                </li>
+                <li class="para_size">
+                  Distributed sponsorships item to 450 students at NTU MSE by
+                  partnering with the NTU MSE Club Welfare Committee
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
